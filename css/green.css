@@ -1,0 +1,18 @@
+.post .botonmas,#menu ul li:hover,#logo,#reloj{
+    background-color: #235e3d;
+    transition: 0.6s ease-in all; 
+}
+#userNameMeeting{
+    background-color:  #235e3d80;
+    transition: 0.6s ease-in all; 
+}
+body{
+    background: url(../img/hojas.jpg);
+    transition: 0.6s ease-in all; 
+    background-attachment: fixed;
+}
+.ui-accordion-header-active{
+    background-color: #235e3d !important;
+    border: 1px solid #235e3d !important;
+    transition: 0.6s ease-in all; 
+}

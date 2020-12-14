@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryUI</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/blue.css" id="theme" />
+    <!--jQuery-->
+    <script src="resources/jquery-3.5.1.min.js"></script>
+    <!--jQueryUI-->
+    <script src="resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.theme.min.css"/>
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--Momentjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-us.min.js"></script>
+    <!--Scripts propios-->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <!--Form Error Dialog-->
+    <div title="Formulario Invalido" id="invalidLog" style="display: none;">Te hace falta rellenar uno de tus campos en el formulario</div>
+    <!--Fixed Bottons-->
+    <div id="go">
+        <div id="goup"></div>
+        <div id="godown"></div>
+    </div>
+    <div id="change-theme">
+        <div id="togreen"></div>
+        <div id="tored"></div>
+        <div id="toblue"></div>
+    </div>
+    <!--Here we'll put the users name-->
+    <div id="userNameMeeting"></div>
+    <!--Beginning of the global container-->
+    <div id="global" class="clearfix">
+        <!--Header with the logo and the menu-->
+        <header id="cabecera">
+            <h1 id="logo">
+                Proyecto JS
+            </h1>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Gallery Slider-->
+        <div id="gslider">
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="Verde"></div>
+                <div><img src="img/rojo.jpg" title="Rojo"></div>
+                <div><img src="img/cielo.jpg" title="Azul"></div>
+            </div>
+        </div>
+        <!--Here we'll divide the global section in two parts-->
+        
+        <section id="content">
+            <!--Left for articles-->
+            <div id="posts"></div>
+            <!--Right for login and an image-->
+            <aside id="sidebar">
+                <div id="about">
+                    <h4 class="subTAside"><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, odio sit amet
+                        accumsan porttitor, urna tortor ultrices nisi, vitae faucibus mi quam eu sapien.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4 class="subTAside"><span>Identificate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label><input type="text" name="name"/>                    <br/>
+                        <label for="email">E-mail</label><input type="email" name="email"/>                 <br/>
+                        <label for="password">Contraseña</label><input type="password" name="password"/>    <br/>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <form id="logout">
+                    <input type="submit" value="Cerrar sesión" />
+                </form>
+                
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </div>
+    <footer>
+        Todos los derechos reservados &copy; Juan Esteban Arango Zapata
+    </footer>
+
+</body>
+
+</html>

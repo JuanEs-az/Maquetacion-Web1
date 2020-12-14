@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JqueryUI</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/blue.css" id="theme" />
+    <!--jQuery-->
+    <script src="resources/jquery-3.5.1.min.js"></script>
+    <!--jQueryUI-->
+    <script src="resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="resources/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+    <!--Scripts propios-->
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+</head>
+
+<body>
+    <!--Form Error Dialog-->
+    <div title="Formulario Invalido" id="invalidLog" style="display: none;">Te hace falta rellenar uno de tus campos en
+        el formulario</div>
+    <!--Fixed Bottons-->
+    <div id="go">
+        <div id="goup"></div>
+        <div id="godown"></div>
+    </div>
+    <div id="change-theme">
+        <div id="togreen"></div>
+        <div id="tored"></div>
+        <div id="toblue"></div>
+    </div>
+    <!--Here we'll put the users name-->
+    <div id="userNameMeeting"></div>
+    <!--Beginning of the global container-->
+    <div id="global" class="clearfix">
+        <!--Header with the logo and the menu-->
+        <header id="cabecera">
+            <h1 id="logo">
+                Proyecto JS
+            </h1>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Here we'll divide the global section in two parts-->
+
+        <section id="content">
+            <!--Left for Accordion😜-->
+            <h3 class="titulo">Sobre mi</h3>
+            <div id="accordion">
+                <h3>¿Quienes Somos?</h3>
+                <div>
+                    <p>
+                        Nullam diam nisi, finibus a nibh nec, interdum porttitor ligula. Integer consequat in felis et
+                        tincidunt. Quisque eget tincidunt quam. Aliquam pellentesque, velit
+                    </p>
+                </div>
+                <h3>¿Donde nos ubucamos?</h3>
+                <div>
+                    <p>
+                        a convallis purus. Suspendisse ut nisl imperdiet, posuere mi eu, tincidunt ante. Nam eu metus
+                        vitae enim tempor iaculis at vel dolor. Nunc mollis magna nec arcu rhoncus pellentesque. Sed nec
+                        felis eu augue pretium egestas a at urna. Quisque malesuada eleifend velit sit amet aliquet.
+                        Nunc velit odio, varius sit amet bibendum eu, accumsan vel dolor. Phasellus blandit imperdiet
+                        arcu in feugiat.
+                    </p>
+                </div>
+                <h3>¿Como trabajamos?</h3>
+                <div>
+                    <p>
+                        d porttitor non, faucibus in urna. Curabitur vehicula sem pellentesque nisl rhoncus tristique.
+                        Vestibulum gravida pretium tortor, id ornare eros ullamcorper nec. Suspendisse id volutpat elit,
+                        sodales gravida massa. Vivamus elementum, tortor id finibus dignissim, elit diam semper justo,
+                        et interdum ex est eget felis. Suspendisse varius massa nulla, quis commodo lacus consequat et.
+                        Nullam non augue volutpat, maximus metus at, tempor metus. In venenatis elementum pretium.
+                        Suspendisse volutpat nunc vestibulum magna ultrices, ut consequat quam imperdiet. Ut dignissim
+                        aliquet augue, vitae lacinia dui consequat vitae. Quisque augue erat, vulputate ullamcorper
+                        felis at, faucibus venenatis ex. Fusce aliquam purus non arcu imperdiet, ut venenatis velit
+                        pharetra. Suspendisse odio libero, auctor ut e
+                    </p>
+                </div>
+            </div>
+            <!--Right for login and an image-->
+            <aside id="sidebar">
+                <div id="about">
+                    <h4 class="subTAside"><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, odio sit amet
+                        accumsan porttitor, urna tortor ultrices nisi, vitae faucibus mi quam eu sapien.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4 class="subTAside"><span>Identificate</span></h4>
+                    <form>
+                        <label for="name">Nombre</label><input type="text" name="name" /> <br />
+                        <label for="email">E-mail</label><input type="email" name="email" /> <br />
+                        <label for="password">Contraseña</label><input type="password" name="password" /> <br />
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <form id="logout">
+                    <input type="submit" value="Cerrar sesión" />
+                </form>
+
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </div>
+    <footer>
+        Todos los derechos reservados &copy; Juan Esteban Arango Zapata
+    </footer>
+
+</body>
+
+</html>
